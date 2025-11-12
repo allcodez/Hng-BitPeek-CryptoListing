@@ -203,8 +203,8 @@ This project is created for educational purposes as part of the HNG Internship p
 ## 👨‍💻 Developer
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/allcodez)
-- LinkedIn: [Your Profile](https://linkedin.com/in/fahd-adebayo-514301250/)
+- GitHub: [@allcodez](https://github.com/allcodez)
+- LinkedIn: [Fahd Adebayo](https://linkedin.com/in/fahd-adebayo-514301250/)
 - Email: your.email@example.com
 
 ## 🙏 Acknowledgments
