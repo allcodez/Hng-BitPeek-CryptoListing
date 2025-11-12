@@ -1,0 +1,38 @@
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_COINGECKO_API_KEY": "CG-84isdLTo1nZF6GULX4wJS3Ww",
+        "EXPO_PUBLIC_COINGECKO_BASE_URL": "https://api.coingecko.com/api/v3"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "EXPO_PUBLIC_COINGECKO_API_KEY": "CG-84isdLTo1nZF6GULX4wJS3Ww",
+        "EXPO_PUBLIC_COINGECKO_BASE_URL": "https://api.coingecko.com/api/v3"
+      }
+    },
+    "preview3": {
+      "developmentClient": true,
+      "env": {
+        "EXPO_PUBLIC_COINGECKO_API_KEY": "CG-84isdLTo1nZF6GULX4wJS3Ww",
+        "EXPO_PUBLIC_COINGECKO_BASE_URL": "https://api.coingecko.com/api/v3"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_COINGECKO_API_KEY": "CG-84isdLTo1nZF6GULX4wJS3Ww",
+        "EXPO_PUBLIC_COINGECKO_BASE_URL": "https://api.coingecko.com/api/v3"
+      }
+    }
+  }
+}

@@ -1,25 +1,27 @@
 {
   "expo": {
-    "name": "AmpleMarket",
-    "slug": "AmpleMarket",
+    "name": "BitPeek",
+    "slug": "BitPeek",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "amplemarket",
+    "scheme": "bitpeek",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.allcodez.BitPeek"
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/android-icon.png",
+        "backgroundImage": "./assets/images/android-icon.png",
+        "monochromeImage": "./assets/images/android-icon.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.allcodez.BitPeek"
     },
     "web": {
       "output": "static",
@@ -43,6 +45,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "14554c62-98dc-41db-92b7-b533b50d72df"
+      }
     }
   }
 }

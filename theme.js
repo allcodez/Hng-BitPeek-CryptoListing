@@ -1,0 +1,126 @@
+// theme.js
+import { Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+
+export const lightTheme = {
+    color: {
+        defaultLight: '#ffffffff',
+        defaultDark: '#000000ff',
+        primary: '#000000',
+        secondary: '#ffffff',
+        background: '#ffffff',
+        background2: '#f4f4f4ff',
+        brand: '#C6FF1B',
+        brandDark: '#ffffffff',
+        surface: '#F5F5F5',
+        card: '#ffffff',
+        darkText: '#202223',
+        lightText: '#6D7175',
+        labelText: '#000000b3',
+        white: '#ffffff',
+        black: '#000000',
+        grey: '#474747',
+        grey2: '#949494',
+        border: '#E0E0E0',
+        error: '#FF3B30',
+        success: '#34C759',
+        warning: '#FF9500',
+        shadow: 'rgba(0, 0, 0, 0.1)',
+    },
+    fontSize: {
+        small: width * 0.03,
+        medium: width * 0.04,
+        large: width * 0.055,
+        xlarge: width * 0.065,
+        sxlarge: width * 0.095,
+        xxlarge: width * 0.12,
+    },
+    font: {
+        light: 'Circular-Std-Light',
+        regular: 'Circular-Std-Regular',
+        medium: 'Circular-Std-Medium',
+        semiBold: 'Circular-Std-Bold',
+        // styleLight: 'RalewayLight',
+        styleRegular: 'Syne-Regular',
+        styleMedium: 'Syne-Medium',
+        styleBold: 'Syne-Bold',
+        styleExtraBold: 'Syne-ExtraBold',
+    },
+    spacing: {
+        xs: 4,
+        sm: 8,
+        md: 16,
+        lg: 24,
+        xl: 32,
+    },
+    borderRadius: {
+        small: 8,
+        medium: 12,
+        large: 16,
+        round: 999,
+    },
+};
+
+export const darkTheme = {
+    color: {
+        defaultLight: '#ffffffff',
+        defaultDark: '#000000ff',
+        primary: '#ffffff',
+        secondary: '#000000ff',
+        background: '#121212',
+        background2: '#232323ff',
+        brand: '#C6FF1B',
+        brandDark: '#C6FF1B',
+        surface: '#1E1E1E',
+        card: '#2C2C2C',
+        darkText: '#E8E8E8',
+        lightText: '#B3B3B3',
+        labelText: '#ffffffb3',
+        white: '#ffffff',
+        black: '#000000',
+        grey: '#B8B8B8',
+        grey2: '#6B6B6B',
+        border: '#3A3A3A',
+        error: '#FF453A',
+        success: '#32D74B',
+        warning: '#FF9F0A',
+        shadow: 'rgba(0, 0, 0, 0.5)',
+    },
+    fontSize: {
+        small: width * 0.03,
+        medium: width * 0.04,
+        large: width * 0.055,
+        xlarge: width * 0.065,
+        sxlarge: width * 0.095,
+        xxlarge: width * 0.12,
+
+    },
+    font: {
+        light: 'Circular-Std-Light',
+        regular: 'Circular-Std-Regular',
+        medium: 'Circular-Std-Medium',
+        semiBold: 'Circular-Std-Bold',
+        // styleLight: 'RalewayLight',
+        styleRegular: 'Syne-Regular',
+        styleMedium: 'Syne-Medium',
+        styleBold: 'Syne-Bold',
+        styleExtraBold: 'Syne-ExtraBold',
+    },
+    spacing: {
+        xs: 4,
+        sm: 8,
+        md: 16,
+        lg: 24,
+        xl: 32,
+    },
+    borderRadius: {
+        small: 8,
+        medium: 12,
+        large: 16,
+        round: 999,
+    },
+};
+
+// Legacy export for backward compatibility
+export const theme = lightTheme;

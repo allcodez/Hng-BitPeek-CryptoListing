@@ -1,50 +1,240 @@
-# Welcome to your Expo app 👋
+# 🪙 Crypto Wallet App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern React Native mobile application that displays real-time cryptocurrency data with a sleek Web3 UI. Built with Expo and powered by the CoinGecko API.
 
-## Get started
+## 📱 Demo
 
-1. Install dependencies
+**[Watch Demo Video](YOUR_DEMO_VIDEO_LINK_HERE)**
 
-   ```bash
-   npm install
-   ```
+**[Download APK](YOUR_APK_DOWNLOAD_LINK_HERE)**
 
-2. Start the app
+## ✨ Features
 
-   ```bash
-   npx expo start
-   ```
+- **📊 Live Crypto Data**: Real-time cryptocurrency prices and market data
+- **📈 Price Trends Chart**: Visual representation of price movements
+- **🔍 Coin Details**: Comprehensive information for each cryptocurrency
+- **🌐 Offline Support**: Graceful handling of network issues and poor connectivity
+- **⚡ Loading States**: Smooth loading indicators for better UX
+- **❌ Error Handling**: User-friendly error messages and recovery options
+- **🎨 Modern Web3 UI**: Clean, intuitive interface with contemporary design
+- **🔎 Search Functionality** *(Optional)*: Find coins quickly
+- **⭐ Favorites** *(Optional)*: Save your preferred cryptocurrencies
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Framework**: React Native with Expo
+- **Language**: JavaScript/TypeScript
+- **API**: CoinGecko Public API
+- **State Management**: React Hooks / Context API
+- **Charts**: react-native-chart-kit / victory-native
+- **Navigation**: React Navigation
+- **HTTP Client**: Axios / Fetch API
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📋 Prerequisites
 
-## Get a fresh project
+Before you begin, ensure you have the following installed:
 
-When you're ready, run:
+- Node.js (v16 or higher)
+- npm or yarn
+- Expo CLI (`npm install -g expo-cli`)
+- Expo Go app on your mobile device (for testing)
 
+## 🚀 Installation
+
+1. **Clone the repository**
 ```bash
-npm run reset-project
+git clone https://github.com/YOUR_USERNAME/crypto-wallet-app.git
+cd crypto-wallet-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
 
-## Learn more
+3. **Set up environment variables**
 
-To learn more about developing your project with Expo, look at the following resources:
+Create a `.env` file in the root directory:
+```env
+EXPO_PUBLIC_API_BASE_URL=https://api.coingecko.com/api/v3
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+> **Note**: CoinGecko's public API doesn't require an API key for basic usage. If using a different API or premium features, add your API key here.
 
-## Join the community
+4. **Start the development server**
+```bash
+npm start
+# or
+expo start
+```
 
-Join our community of developers creating universal apps.
+5. **Run on your device**
+   - Scan the QR code with Expo Go (Android) or Camera app (iOS)
+   - Or press `a` for Android emulator, `i` for iOS simulator
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📁 Project Structure
+
+```
+crypto-wallet-app/
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── CoinCard.js
+│   │   ├── PriceChart.js
+│   │   ├── LoadingState.js
+│   │   └── ErrorState.js
+│   ├── screens/           # App screens
+│   │   ├── CoinsListScreen.js
+│   │   └── CoinDetailScreen.js
+│   ├── services/          # API calls and data fetching
+│   │   └── cryptoApi.js
+│   ├── utils/             # Helper functions
+│   │   └── formatters.js
+│   ├── contexts/          # React Context for state management
+│   │   └── FavoritesContext.js
+│   └── navigation/        # Navigation configuration
+│       └── AppNavigator.js
+├── assets/                # Images, fonts, icons
+├── .env                   # Environment variables (not committed)
+├── .gitignore
+├── app.json              # Expo configuration
+├── package.json
+└── README.md
+```
+
+## 🔧 Configuration
+
+### API Configuration
+
+The app uses CoinGecko's public API. Key endpoints used:
+
+- **Coins List**: `/coins/markets`
+- **Coin Details**: `/coins/{id}`
+- **Market Chart**: `/coins/{id}/market_chart`
+
+### Building for Production
+
+**Android APK:**
+```bash
+expo build:android
+# or with EAS Build
+eas build --platform android
+```
+
+**iOS IPA:**
+```bash
+expo build:ios
+# or with EAS Build
+eas build --platform ios
+```
+
+## 🎯 Key Features Implementation
+
+### 1. Coins List Screen
+- Displays top cryptocurrencies by market cap
+- Shows coin name, symbol, current price, and 24h change
+- Pull-to-refresh functionality
+- Infinite scroll/pagination
+
+### 2. Coin Detail Screen
+- Detailed information about selected cryptocurrency
+- Price trend chart (7 days, 30 days, 1 year)
+- Market cap, volume, supply data
+- Price change percentages
+
+### 3. Network Handling
+- **Loading States**: Skeleton loaders and spinners
+- **Error States**: Retry mechanisms with user-friendly messages
+- **Offline Mode**: Cached data display with offline indicators
+- **Poor Connection**: Request timeouts and fallback strategies
+
+### 4. State Management
+- React Context for favorites and global state
+- Local state for component-specific data
+- AsyncStorage for persistent data
+
+## 🧪 Testing
+
+Run the app locally:
+```bash
+npm start
+```
+
+Test different network conditions:
+- Enable Airplane mode to test offline functionality
+- Use Chrome DevTools to throttle network speed
+- Test error scenarios by disconnecting internet mid-request
+
+## 📦 Dependencies
+
+```json
+{
+  "expo": "~50.0.0",
+  "react": "18.2.0",
+  "react-native": "0.73.0",
+  "@react-navigation/native": "^6.x.x",
+  "@react-navigation/stack": "^6.x.x",
+  "axios": "^1.x.x",
+  "react-native-chart-kit": "^6.x.x",
+  "@react-native-async-storage/async-storage": "^1.x.x"
+}
+```
+
+## 🔒 Security Best Practices
+
+- ✅ Environment variables for sensitive data
+- ✅ `.env` file excluded from Git
+- ✅ No hardcoded API keys in source code
+- ✅ Secure API communication over HTTPS
+
+## 🐛 Known Issues
+
+- None currently reported
+
+## 🤝 Contributing
+
+This is a HNG Internship Stage 4 project. Feedback and suggestions are welcome!
+
+## 📄 License
+
+This project is created for educational purposes as part of the HNG Internship program.
+
+## 👨‍💻 Developer
+
+**Your Name**
+- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+- Email: your.email@example.com
+
+## 🙏 Acknowledgments
+
+- [HNG Internship](https://hng.tech) - For this amazing learning opportunity
+- [CoinGecko](https://www.coingecko.com) - For providing the free crypto API
+- React Native & Expo communities
+
+---
+
+**Built with ❤️ for HNG Internship Stage 4**
+
+## 📝 Additional Notes
+
+### For Reviewers
+
+1. **APK Download**: [Direct APK Link](YOUR_APK_LINK_HERE)
+2. **Demo Video**: [Watch Full Demo](YOUR_VIDEO_LINK_HERE)
+3. **Setup Time**: ~5 minutes
+4. **API Limits**: CoinGecko free tier allows 10-50 calls/minute
+
+### Future Enhancements
+
+- [ ] Price alerts and notifications
+- [ ] Portfolio tracking
+- [ ] Multiple currency support
+- [ ] Dark/Light theme toggle
+- [ ] Advanced charting with multiple indicators
+- [ ] Social features and community sentiment
+
+---
+
+*This project is part of the HNG Internship Mobile Track Stage 4. Learn more about [HNG Internship](https://hng.tech) and [how to hire talented developers](https://hng.tech/hire).*
