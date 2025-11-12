@@ -25,7 +25,7 @@ A modern React Native mobile application that displays real-time cryptocurrency 
 - **Framework**: React Native with Expo
 - **Language**: JavaScript/TypeScript
 - **API**: CoinGecko Public API
-- **State Management**: React Hooks / Context API
+- **State Management**: Zustand
 - **Charts**: react-native-chart-kit / victory-native
 - **Navigation**: React Navigation
 - **HTTP Client**: Axios / Fetch API
