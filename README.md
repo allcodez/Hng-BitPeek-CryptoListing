@@ -4,7 +4,7 @@ A modern React Native mobile application that displays real-time cryptocurrency 
 
 ## 📱 Demo
 
-**[Watch Demo Video](YOUR_DEMO_VIDEO_LINK_HERE)**
+**[Watch Demo Video](https://drive.google.com/file/d/1MRDZ43riqNKJ5dXgdWG_B0VOMFD8Ezqm/view?usp=sharing)**
 
 **[Download APK](YOUR_APK_DOWNLOAD_LINK_HERE)**
 
@@ -222,7 +222,7 @@ This project is created for educational purposes as part of the HNG Internship p
 ### For Reviewers
 
 1. **APK Download**: [Direct APK Link](YOUR_APK_LINK_HERE)
-2. **Demo Video**: [Watch Full Demo](YOUR_VIDEO_LINK_HERE)
+2. **Demo Video**: [Watch Full Demo](https://drive.google.com/file/d/1MRDZ43riqNKJ5dXgdWG_B0VOMFD8Ezqm/view?usp=sharing)
 3. **Setup Time**: ~5 minutes
 4. **API Limits**: CoinGecko free tier allows 10-50 calls/minute
 
