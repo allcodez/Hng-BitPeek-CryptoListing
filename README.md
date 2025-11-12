@@ -6,7 +6,7 @@ A modern React Native mobile application that displays real-time cryptocurrency 
 
 **[Watch Demo Video](https://drive.google.com/file/d/1MRDZ43riqNKJ5dXgdWG_B0VOMFD8Ezqm/view?usp=sharing)**
 
-**[Download APK](YOUR_APK_DOWNLOAD_LINK_HERE)**
+**[Download APK](https://drive.google.com/file/d/1GVKZNgfYDWWnTNiMAZVG6H0Wo6d5Rcy0/view?usp=sharing)**
 
 ## ✨ Features
 
@@ -203,8 +203,8 @@ This project is created for educational purposes as part of the HNG Internship p
 ## 👨‍💻 Developer
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+- GitHub: [@your-username](https://github.com/allcodez)
+- LinkedIn: [Your Profile](https://linkedin.com/in/fahd-adebayo-514301250/)
 - Email: your.email@example.com
 
 ## 🙏 Acknowledgments
@@ -221,20 +221,10 @@ This project is created for educational purposes as part of the HNG Internship p
 
 ### For Reviewers
 
-1. **APK Download**: [Direct APK Link](YOUR_APK_LINK_HERE)
+1. **APK Download**: [Direct APK Link](https://drive.google.com/file/d/1GVKZNgfYDWWnTNiMAZVG6H0Wo6d5Rcy0/view?usp=sharing)
 2. **Demo Video**: [Watch Full Demo](https://drive.google.com/file/d/1MRDZ43riqNKJ5dXgdWG_B0VOMFD8Ezqm/view?usp=sharing)
 3. **Setup Time**: ~5 minutes
 4. **API Limits**: CoinGecko free tier allows 10-50 calls/minute
 
-### Future Enhancements
-
-- [ ] Price alerts and notifications
-- [ ] Portfolio tracking
-- [ ] Multiple currency support
-- [ ] Dark/Light theme toggle
-- [ ] Advanced charting with multiple indicators
-- [ ] Social features and community sentiment
-
----
 
 *This project is part of the HNG Internship Mobile Track Stage 4. Learn more about [HNG Internship](https://hng.tech) and [how to hire talented developers](https://hng.tech/hire).*
