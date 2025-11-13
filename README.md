@@ -43,8 +43,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/crypto-wallet-app.git
-cd crypto-wallet-app
+git clone https://github.com/allcodez/Hng-BitPeek-CryptoListing/
+cd Hng-BitPeek-CryptoListing
 ```
 
 2. **Install dependencies**
@@ -202,10 +202,9 @@ This project is created for educational purposes as part of the HNG Internship p
 
 ## 👨‍💻 Developer
 
-**Your Name**
 - GitHub: [@allcodez](https://github.com/allcodez)
 - LinkedIn: [Fahd Adebayo](https://linkedin.com/in/fahd-adebayo-514301250/)
-- Email: your.email@example.com
+- Email: fahdadebayo02@gmail.com
 
 ## 🙏 Acknowledgments
 
